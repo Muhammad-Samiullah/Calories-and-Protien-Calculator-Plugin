@@ -1,0 +1,58 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  	<input type="hidden" id="edit-id" />
+        <label for="edit-ingredient">Ingredient</label> <br>
+		<input id="edit-ingredient" placeholder="Ingredient" />
+		<br>
+		<label for="edit-protien">Protien</label> <br>
+		<input id="edit-protien" placeholder="Protien" />
+		<br>
+		<label for="edit-calories">Calories</label> <br>
+		<input id="edit-calories" placeholder="Calories" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="update-btn" data-dismiss="modal" class="btn btn-primary">Update Data</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  	<form id="insert-form">
+			<input type="hidden" name="action" value="insert_ingredient" />
+			<label for="add-ingredient">Ingredient Name</label> <br>
+			<input name="ingredient" id="add-ingredient" placeholder="Ingredient Name" required />
+			<br>
+			<label for="add-protien">Protien</label> <br>
+			<input name="protien" id="add-protien" placeholder="Protien" required />
+			<br>
+			<label for="add-calories">Calories</label> <br>
+			<input name="calories" id="add-calories" placeholder="Calories" required /> <br> <br>
+			<input name="file" type="file" id="add-image" required />
+			<center><input type="submit" id="insert-btn" class="btn btn-primary" value="Add Ingredient" /></center>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
